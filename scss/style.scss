@@ -1,0 +1,154 @@
+﻿@import 'variables';
+@import 'components/all';
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #222;
+  background-color: #ccc;
+  line-height: 24px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.5s;
+  &:hover {
+    transition: 0.5s;
+  }
+}
+ul,
+li {
+  list-style: none;
+}
+
+.wrapper {
+  // margin: 0 auto;
+  // max-width: 1500px;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 84px 0;
+}
+
+.slide-btn {
+  a {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    background-color: #fff;
+    margin: 6px;
+
+    &:hover {
+      background: $gold;
+    }
+  }
+  &_active {
+    //NEROBE
+    background: $gold;
+  }
+}
+
+//block-text
+.text {
+  text-align: center;
+  padding-bottom: 107px;
+
+  &__title {
+    font-size: 34px;
+    text-transform: uppercase;
+    padding-bottom: 31px;
+    line-height: normal;
+  }
+  &__line {
+    width: 99px;
+    height: 3px;
+    margin: 0 auto;
+    background-color: $gold;
+  }
+  &__line-two {
+    width: 67px;
+    height: 3px;
+    margin: 12px auto;
+    background-color: rgba($gold, 0.7);
+  }
+  &__description {
+    padding-top: calc(41px - 12px);
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+  }
+}
+//blosk text end
+
+.naverh {
+  margin: 15px;
+  display: none;
+
+  a {
+    display: block;
+    padding: 15px;
+    position: fixed;
+    right: 15px;
+    bottom: 30px;
+    background: $dark-gold;
+    opacity: 0.3;
+    border-radius: 5px;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+//-----------------
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide {
+  width: 80%;
+}
+
+.swiper-slide:nth-child(2n) {
+  width: 60%;
+}
+
+.swiper-slide:nth-child(3n) {
+  width: 40%;
+}
