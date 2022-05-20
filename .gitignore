@@ -1,1 +1,4 @@
 .vscode/settings.json
+dist/css/style.min.css
+dist/css/style.min.css.map
+test.html
