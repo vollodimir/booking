@@ -28,7 +28,9 @@ li {
 
 .wrapper {
   background-color: #fff;
-  background-image: url('../img/bg_map.png') center center;
+  background-image: url('../img/bg_map.png') center;
+  background-attachment: scroll;
+  background-size: cover;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -89,5 +91,70 @@ li {
     span {
       color: #f58220;
     }
+  }
+}
+//header--END
+
+////search
+.search {
+  background: url('../img/search_bg.png') no-repeat;
+  background-size: cover;
+  &__body {
+    min-height: 241px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  &__servises {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 15px;
+    font-weight: 700;
+    color: #58585a;
+    li {
+      list-style-image: url('../img/search_li.png');
+      span {
+        color: #f58220;
+      }
+    }
+  }
+  &__form {
+    width: 100%;
+    min-height: 62px;
+    background-color: #58585a;
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    padding: 16px 28px;
+    input,
+    select {
+      height: 31px;
+      background-color: #ffffff;
+      box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.38);
+      box-sizing: border-box;
+      margin-right: 9px;
+      padding-left: 22px;
+    }
+  }
+  &__place {
+    width: 318px;
+  }
+  &__data {
+    width: 220px;
+  }
+  &__guests {
+    width: 231px;
+  }
+  &__btn {
+    width: 106px;
+    height: 32px;
+    background-color: rgba(255, 255, 255, 0.81);
+    background-image: linear-gradient(0deg, #faa61a 0%, #f58220 100%);
+    border: 1px solid #f58220;
+    box-shadow: inset 0px 2px 0px 0px rgba(251, 251, 252, 0.54);
   }
 }
