@@ -27,10 +27,12 @@ li {
 }
 
 .wrapper {
-  background-color: #fff;
-  background-image: url('../img/bg_map.png') center;
-  background-attachment: scroll;
-  background-size: cover;
+  //background-color: #fff;
+  background: #fff url('../img/bg_map.png') no-repeat center;
+  background-size: 100%;
+
+  //background-attachment: scroll;
+
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -167,15 +169,26 @@ li {
 }
 ////search END
 
+.main-body {
+  display: flex;
+  padding-top: 45px;
+  justify-content: space-between;
+}
+
+.left-section {
+  flex: 0 1 75%;
+}
+
 //--sort
 
 .sort {
   &__body {
     width: 100%;
-    margin-top: 50px;
+    padding-bottom: 26px;
   }
   &__title {
     display: flex;
+    flex-wrap: wrap;
     padding: 13px 20px 0 20px;
     justify-content: space-between;
     width: 58%;
@@ -199,3 +212,170 @@ li {
     border-radius: 0 10px 10px 10px;
   }
 }
+
+//--sort - end
+
+.hotels {
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.hotel {
+  &__body {
+    width: 223px;
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 5px;
+    align-items: center;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
+  }
+  &__title {
+    height: 52px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #58585a;
+    font-size: 16px;
+    font-weight: 700;
+    z-index: 5;
+  }
+  &__sale {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    top: 15px;
+    right: -30px;
+    background-image: url('../img/icon/hotel_sale.svg');
+    transform: rotate(-45deg);
+  }
+
+  &__img {
+    width: 215px;
+    height: 176px;
+    margin: 4px;
+    position: relative;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__recommended {
+    position: absolute;
+    width: 100%;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    background: green;
+    color: #fff;
+
+    top: 32px;
+    left: -60px;
+    transform: rotate(-45deg);
+  }
+  &__like {
+    position: absolute;
+    bottom: 27px;
+    right: 6px;
+    fill: #fff;
+    &:hover {
+      fill: red;
+    }
+  }
+  &__rating {
+    width: 100%;
+    height: 29px;
+    position: absolute;
+    padding: 0 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    font-size: 13px;
+    color: #fb9b44;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  &__stars {
+    display: inline-block;
+    span {
+      padding: 0;
+      font-size: 20px;
+      color: #fbc39e;
+    }
+    & > span:before {
+      content: '★';
+    }
+    & > span.hotel__stars--active {
+      color: #f9c658;
+    }
+  }
+
+  &__price {
+    min-width: 135px;
+    height: 36px;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 5px;
+    margin: 13px 0;
+    background-color: rgba(#58585a, 0.18);
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #58585a;
+    span {
+      font-size: 23px;
+    }
+  }
+  &__description {
+    font-size: 14px;
+    font-style: italic;
+    color: #58585a;
+  }
+  &__btn {
+    margin: 10px 0 17px;
+    padding: 4px 6px;
+    width: 144px;
+    height: 47px;
+    background-color: #fb9b44;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25);
+    a {
+      display: block;
+      text-align: center;
+      width: 132px;
+      height: 39px;
+      padding-top: 6px;
+      border: 3px solid #e2711f;
+      font-size: 17px;
+      font-weight: 700;
+      text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.7);
+      color: #fff;
+      &:hover {
+        border: 3px solid #fbc39e;
+      }
+    }
+  }
+}
+//---hotels--END
+
+//---filter
+
+.filter {
+  margin-top: 37px;
+  width: 223px;
+  background-color: #fff;
+  //border: 1px solid #58585a;
+  border-radius: 5px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
+}
+
+//---filter--END
