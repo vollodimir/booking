@@ -563,7 +563,92 @@
               </section>
               <!-- Hotels End -->
             </div>
-            <aside class="filter">Star Rating</aside>
+            <aside class="filter">
+              <div class="filter__star">Star Rating</div>
+              <div class="filter__guest">Guest Rating</div>
+              <div class="filter__price">Price Range <input type="range" /></div>
+              <div class="filter__friendly list">
+                <details open>
+                  <summary>Friendly!?</summary>
+                  <ul class="list__body">
+                    <li>
+                      <label><input type="checkbox" /> Family friendly(96)</label>
+                    </li>
+                    <li>
+                      <label><input type="checkbox" /> Pet friendly(8)</label>
+                    </li>
+                    <li>
+                      <label><input type="checkbox" /> Gay friendly(5)</label>
+                    </li>
+                    <li>
+                      <label><input type="checkbox" /> Disabled Facility's(32)</label>
+                    </li>
+                  </ul>
+                </details>
+              </div>
+              <div class="filter__amenities list">
+                <details open>
+                  <summary>Amenities</summary>
+                  <ul class="list__body">
+                    <li>
+                      <label><input type="checkbox" /> 24 Hour Room Service(108)</label>
+                    </li>
+                    <li>
+                      <label><input type="checkbox" /> Non Smoking Rooms(108)</label>
+                    </li>
+                    <li>
+                      <label><input type="checkbox" /> Smoking Rooms(0)</label>
+                    </li>
+                    <li>
+                      <label><input type="checkbox" /> Airport Shuttle(96)</label>
+                    </li>
+                    <li>
+                      <label><input type="checkbox" /> Concierge(12)</label>
+                    </li>
+                    <li>
+                      <label><input type="checkbox" /> Hotel Wifi(108)</label>
+                    </li>
+                  </ul>
+                </details>
+              </div>
+              <div class="filter__type list">
+                <details open>
+                  <summary>Accommodation Type</summary>
+                  <ul class="list__body">
+                    <li>
+                      <label><input type="checkbox" /> Beach - Seaside(10)</label>
+                    </li>
+                    <li>
+                      <label><input type="checkbox" /> Romantic(23)</label>
+                    </li>
+                    <li>
+                      <label><input type="checkbox" /> Budget(66)</label>
+                    </li>
+                    <li>
+                      <label><input type="checkbox" /> Family(24)</label>
+                    </li>
+                    <li>
+                      <label><input type="checkbox" /> City Center(5)</label>
+                    </li>
+                    <li>
+                      <label><input type="checkbox" /> Boutique(2)</label>
+                    </li>
+                    <li>
+                      <label><input type="checkbox" /> Shopping(57)</label>
+                    </li>
+                    <li>
+                      <label><input type="checkbox" /> Golf Sports(1)</label>
+                    </li>
+                    <li>
+                      <label><input type="checkbox" /> Gourmet Restaurant(58)</label>
+                    </li>
+                    <li>
+                      <label><input type="checkbox" /> Business Hotel(75)</label>
+                    </li>
+                  </ul>
+                </details>
+              </div>
+            </aside>
             <!-- Filter End -->
           </article>
         </div>
@@ -624,10 +709,14 @@
               </ul>
             </div>
           </div>
-          <div class="footer__powered">Hotel reviews powered by;</div>
+          <div class="footer__powered">
+            Hotel reviews powered by: <a href="http://pl.vn.ua"> pl.vn.ua</a>
+          </div>
           <div class="footer__bg-img"></div>
-          <div class="footer__copyright">© 2022. Hotelbooking</div>
-          <div class="footer__socials">socials</div>
+          <div class="footer__bottom">
+            <div class="footer__copyright">© 2022. Hotelbooking</div>
+            <div class="footer__socials">socials</div>
+          </div>
         </div>
       </footer>
     </div>
