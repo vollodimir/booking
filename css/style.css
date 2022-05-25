@@ -231,8 +231,6 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   padding: 13px 20px 0 20px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -245,9 +243,21 @@ li {
   color: #fff;
 }
 
+.sort__title .list__body {
+  width: 180px;
+  padding: 10px 15px;
+  position: absolute;
+  left: -20px;
+  z-index: 50;
+  background-color: #58585a;
+}
+
+.sort__title summary {
+  width: 160px;
+}
+
 .sort__title li {
-  padding-right: 75px;
-  background: url("../img/icon/down.svg") no-repeat right;
+  position: relative;
 }
 
 .sort__row {

@@ -104,9 +104,46 @@
             <div class="left-section">
               <section class="sort">
                 <div class="sort__body">
-                  <ul class="sort__title">
-                    <li>SORT BY:</li>
-                    <li>ROOM TYPE:</li>
+                  <ul class="sort__title list">
+                    <li>
+                      <details>
+                        <summary>SORT BY:</summary>
+
+                        <ul class="list__body">
+                          <li>
+                            <label><input type="radio" name="sort-by" />Price</label>
+                          </li>
+                          <li>
+                            <label><input type="radio" name="sort-by" />Popular</label>
+                          </li>
+                          <li>
+                            <label><input type="radio" name="sort-by" />Stars</label>
+                          </li>
+                          <li>
+                            <label><input type="radio" name="sort-by" />Reviews</label>
+                          </li>
+                        </ul>
+                      </details>
+                    </li>
+                    <li>
+                      <details>
+                        <summary>ROOM TYPE:</summary>
+                        <ul class="list__body">
+                          <li>
+                            <label><input type="checkbox" /> Family friendly(96)</label>
+                          </li>
+                          <li>
+                            <label><input type="checkbox" /> Pet friendly(8)</label>
+                          </li>
+                          <li>
+                            <label><input type="checkbox" /> Gay friendly(5)</label>
+                          </li>
+                          <li>
+                            <label><input type="checkbox" /> Disabled Facility's(32)</label>
+                          </li>
+                        </ul>
+                      </details>
+                    </li>
                   </ul>
                   <div class="sort__row"></div>
                 </div>
@@ -714,8 +751,12 @@
           </div>
           <div class="footer__bg-img"></div>
           <div class="footer__bottom">
-            <div class="footer__copyright">© 2022. Hotelbooking</div>
-            <div class="footer__socials">socials</div>
+            <div class="footer__copyright">© 2022. Hotelbooking - Book hotel now</div>
+            <div class="footer__socials">
+              <img src="./img/icon/socials_fb.svg" alt="Facebook" />
+              <img src="./img/icon/socials_telegram.svg" alt="Telegram" />
+              <img src="./img/icon/socials_viber.svg" alt="Viber" />
+            </div>
           </div>
         </div>
       </footer>

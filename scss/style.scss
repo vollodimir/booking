@@ -188,7 +188,6 @@ li {
   }
   &__title {
     display: flex;
-    flex-wrap: wrap;
     padding: 13px 20px 0 20px;
     justify-content: space-between;
     width: 58%;
@@ -197,10 +196,27 @@ li {
     font-size: 14px;
     font-weight: 700;
     color: #fff;
+    /////////////tut//////////
+    & .list__body {
+      width: 180px;
+      padding: 10px 15px;
+      position: absolute;
+      left: -20px;
+      z-index: 50;
+      background-color: #58585a;
+    }
+    & summary {
+      width: 160px;
+    }
+
+    & summary:before {
+      //background: url('../img/icon/down.svg') no-repeat 50% 50% / 1em 1em;
+    }
 
     li {
-      padding-right: 75px;
-      background: url('../img/icon/down.svg') no-repeat right;
+      position: relative;
+      //width: 50%;
+      // background: url('../img/icon/down.svg') no-repeat right;
     }
   }
   &__row {
