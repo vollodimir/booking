@@ -39,6 +39,7 @@ li {
 .container {
   max-width: 975px;
   margin: 0 auto;
+  padding: 0 5px;
 }
 
 .main-body {
@@ -89,7 +90,7 @@ li {
   min-width: 301px;
 }
 
-.header__tabs ul {
+.header__row {
   font-size: 13px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -97,17 +98,6 @@ li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.header__tabs ul li {
-  background: url("../img/icon/down.svg") no-repeat right;
-  border-right: 1px solid #000;
-}
-
-.header__tabs ul a {
-  color: #fff;
-  padding-right: 30px;
-  padding-left: 11px;
 }
 
 .header__tel {
@@ -119,6 +109,71 @@ li {
 
 .header__tel span {
   color: #f58220;
+}
+
+.tab {
+  font-size: 13px;
+  color: #fff;
+}
+
+.tab__body {
+  position: relative;
+  background-color: #2b2c32;
+  z-index: 50;
+  border-radius: 0 0 5px 5px;
+  opacity: 0.93;
+}
+
+.tab__body li {
+  padding: 3px 15px;
+}
+
+.tab__body li:hover {
+  padding-left: 18px;
+  background-color: #58585a;
+}
+
+.tab details {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.tab summary {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding-right: 35px;
+  padding-left: 11px;
+  border-right: 1px solid #000;
+}
+
+.tab summary:before {
+  font-size: 25px;
+  top: 0;
+  right: 0.3em;
+  color: transparent;
+  background: url("../img/icon/down.svg") no-repeat right;
+  width: 1em;
+  height: 1em;
+  content: '';
+  position: absolute;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.tab details[open] > summary:before {
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+.tab details[open] summary ~ * {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-animation: sweep 0.5s ease-in-out;
+          animation: sweep 0.5s ease-in-out;
 }
 
 .search {
@@ -164,6 +219,7 @@ li {
 
 .search__servises li {
   list-style-image: url("../img/search_li.png");
+  margin: 0 24px;
 }
 
 .search__servises li span {
@@ -177,7 +233,11 @@ li {
   border-radius: 5px;
   -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
-  padding: 16px 28px;
+  padding: 16px 25px;
+}
+
+.search__form form * {
+  margin: 5px 0;
 }
 
 .search__form input,
@@ -283,6 +343,7 @@ li {
 
 .hotel__body {
   width: 223px;
+  margin: 5px;
   margin-bottom: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -298,6 +359,15 @@ li {
           align-items: center;
   -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.hotel__body:hover {
+  -webkit-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.8);
+          box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.8);
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
 }
 
 .hotel__title {
@@ -462,6 +532,7 @@ li {
 
 .filter {
   margin-top: 37px;
+  margin-left: 5px;
   width: 223px;
   background-color: #fff;
   -ms-flex-item-align: start;
@@ -495,6 +566,10 @@ li {
   font-size: 13px;
   font-weight: 300;
   margin: 13px 0;
+}
+
+.list__body input[type='radio'] {
+  margin: 5px;
 }
 
 .list details {
@@ -626,5 +701,26 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 990px) {
+  .hotels__body {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .search__servises {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 915px) {
+  .sort__title {
+    width: 100%;
+  }
+  .sort__row {
+    border-radius: 0 0 10px 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
