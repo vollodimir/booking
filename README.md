@@ -1,3 +1,2 @@
-# mebel
-
-HTML templtate, landing page
+# booking
+Hotel Booking templtate

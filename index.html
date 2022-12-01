@@ -15,375 +15,769 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="header__body">
-          <!--fixed menu-->
-          <div class="header__wrapper">
-            <div class="header__container">
-              <div class="header__navigation">
-                <div class="header__logo logo"><a href="#">Furni.</a></div>
-                <input class="header__input" type="checkbox" />
-                <div class="header__lines"></div>
+        <div class="container">
+          <div class="header__body">
+            <div class="header__row">
+              <div class="header__logo">
+                <a href="/"><img src="./img/logo.png" alt="Hotel Booking" /></a>
+              </div>
+              <div class="header__column">
+                <div class="header__tabs">
+                  <ul class="header__row">
+                    <li class="tab">
+                      <details>
+                        <summary>
+                          <svg
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            width="16px"
+                            height="16px"
+                            viewBox="0 0 94 94"
+                            style="enable-background: new 0 0 94 94"
+                            xml:space="preserve"
+                          >
+                            <g>
+                              <path
+                                style="fill: #fff"
+                                d="M73.602,69.24c-12.326-4.493-16.266-8.282-16.266-16.395c0-4.871,3.764-3.28,5.416-12.2
+			c0.686-3.7,4.01-0.06,4.646-8.507c0-3.367-1.814-4.203-1.814-4.203s0.922-4.982,1.283-8.816C67.314,14.342,64.107,2,47,2
+			S26.684,14.342,27.133,19.119c0.361,3.834,1.283,8.816,1.283,8.816s-1.814,0.836-1.814,4.203c0.635,8.447,3.959,4.807,4.645,8.507
+			c1.654,8.919,5.416,7.329,5.416,12.2c0,8.113-3.938,11.902-16.264,16.395C8.033,73.746,0,78.339,0,81.473C0,84.604,0,92,0,92h47
+			h47c0,0,0-7.396,0-10.527C94,78.339,85.967,73.746,73.602,69.24z"
+                              />
+                            </g>
+                          </svg>
+                          &nbsp; My Account
+                        </summary>
 
-                <div class="header__all-menu">
-                  <nav>
-                    <ul class="header__menu">
-                      <li class="header__menu--active"><a href="#">Home</a></li>
-                      <li><a href="#">About us</a></li>
-                      <li><a href="#">Services</a></li>
-                      <li><a href="#">Blog</a></li>
-                      <li><a href="#">Contac us</a></li>
-                    </ul>
-                  </nav>
-                  <div class="header__user-btn">
-                    <a href="#">
-                      <img width="24px" height="24px" src="./img/icon/user.svg" alt="user"
-                    /></a>
-                    <a href="#">
-                      <img width="24px" height="24px" src="./img/icon/cart.svg" alt="cart"
-                    /></a>
-                  </div>
+                        <ul class="tab__body">
+                          <li><a href="#"> Change Profile</a></li>
+                          <li><a href="#">Settings</a></li>
+                          <li><a href="#">Logout</a></li>
+                        </ul>
+                      </details>
+                    </li>
+
+                    <li class="tab">
+                      <details>
+                        <summary><img src="./img/icon/lang_ang.svg" alt="EN" /> &nbsp; EN</summary>
+                        <ul class="tab__body">
+                          <li>
+                            <a href="#"><img src="./img/icon/lang_ang.svg" alt="EN" /> &nbsp; UA</a>
+                          </li>
+                          <li><img src="./img/icon/lang_ang.svg" alt="EN" /> &nbsp; FR</li>
+                        </ul>
+                      </details>
+                    </li>
+
+                    <li class="tab">
+                      <details>
+                        <summary>USD ($)</summary>
+                        <ul class="tab__body">
+                          <li><a href="#">UAH (₴)</a></li>
+                          <li><a href="#">EUR (€)</a></li>
+                        </ul>
+                      </details>
+                    </li>
+                  </ul>
                 </div>
+                <div class="header__tel">8-800-000-000 <span>FREE CALL</span></div>
               </div>
-            </div>
-          </div>
-          <!--fixed menu END-->
-          <div class="header__row">
-            <div class="header__text">
-              <div class="header__title">
-                Modern Interior<br />
-                Design Studio
-              </div>
-              <div class="header__btns">
-                <a class="header__btn header__btn--filled" href="#">Shop Now</a>
-                <a class="header__btn" href="#">Explore</a>
-              </div>
-            </div>
-            <div class="header__img">
-              <!-- <img src="./img/header_sofa.png" title="" /> -->
             </div>
           </div>
         </div>
       </header>
       <main>
-        <section class="products">
+        <section class="search">
           <div class="container">
-            <div class="products__body">
-              <div class="products__details">
-                <div class="products__title">Crafted with excellent material.</div>
-                <div class="products__description">
-                  Donec mattis porta eros, aliquet finibus risus interdum at. Nulla vivethe as it
-                  was for us to know what was to be done.
-                </div>
+            <div class="search__body">
+              <ul class="search__servises">
+                <li>No booking fees</li>
+                <li>No cancelation fees <span>*</span></li>
+                <li>Secure online booking</li>
+                <li>Instant email confirmation</li>
+              </ul>
+              <div class="search__form">
+                <form action="#">
+                  <input class="search__place" type="text" placeholder="Auckland, New Zealand" />
+                  <input class="search__data" type="date" />
+                  <select class="search__guests">
+                    <option value="hide">-- Year --</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                  </select>
 
-                <div class="btn" href="#">
-                  <a class="btn__item" href="#">Explore</a>
-                </div>
-              </div>
-              <div class="products__items">
-                <div class="product">
-                  <div class="product__shadow"></div>
-                  <div class="product__img"><img src="./img/product-1.png" alt="product-1" /></div>
-                  <div class="product__title">Nordic CHAIR</div>
-                  <div class="product__price">$50.00</div>
-                  <div class="product__btn"><a href="#">+</a></div>
-                </div>
-                <div class="product">
-                  <div class="product__shadow"></div>
-                  <div class="product__img"><img src="./img/product-2.png" alt="product-1" /></div>
-                  <div class="product__title">Kruzo Aero Chair</div>
-                  <div class="product__price">$78.00</div>
-                  <div class="product__btn"><a href="#">+</a></div>
-                </div>
-                <div class="product">
-                  <div class="product__shadow"></div>
-                  <div class="product__img"><img src="./img/product-3.png" alt="product-1" /></div>
-                  <div class="product__title">Ergonomic Chair</div>
-                  <div class="product__price">$43.00</div>
-                  <div class="product__btn"><a href="#">+</a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="why-us">
-          <div class="container">
-            <div class="why-us__body">
-              <div class="why-us__left">
-                <div class="why-us__title">Why Choose Us</div>
-                <div class="why-us__description">
-                  Donec mattis porta eros, aliquet finibus risus interdum at. Nulla vivethe as it
-                  was for us to know what was to be done. the
-                </div>
-                <div class="why-us__advantages">
-                  <div class="advantage">
-                    <div class="advantage__img"><img src="./img/icon/truck.svg" alt="" /></div>
-                    <div class="advantage__title">Fast & Free Shipping</div>
-                    <div class="advantage__description">
-                      Donec mattis porta eros, aliquet finibus risus interdum at. Nulla vivethe as
-                      it was
-                    </div>
-                  </div>
-
-                  <div class="advantage">
-                    <div class="advantage__img"><img src="./img/icon/shop_bag.svg" alt="" /></div>
-                    <div class="advantage__title">Easy to Shop</div>
-                    <div class="advantage__description">
-                      Donec mattis porta eros, aliquet finibus risus interdum at. Nulla vivethe as
-                      it was
-                    </div>
-                  </div>
-
-                  <div class="advantage">
-                    <div class="advantage__img"><img src="./img/icon/support.svg" alt="" /></div>
-                    <div class="advantage__title">24/7 Support</div>
-                    <div class="advantage__description">
-                      Donec mattis porta eros, aliquet finibus risus interdum at. Nulla vivethe as
-                      it was
-                    </div>
-                  </div>
-
-                  <div class="advantage">
-                    <div class="advantage__img"><img src="./img/icon/return.svg" alt="" /></div>
-                    <div class="advantage__title">Hassle Free Returns</div>
-                    <div class="advantage__description">
-                      Donec mattis porta eros, aliquet finibus risus interdum at. Nulla vivethe as
-                      it was
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="why-us__right"><img src="./img/why-choose-us-img.png" alt="" /></div>
-            </div>
-          </div>
-        </section>
-
-        <section class="design">
-          <div class="design__body">
-            <div class="container design__row">
-              <div class="design__images">
-                <img src="./img/design_img.png" alt="" />
-              </div>
-              <div class="design__text">
-                <div class="design__title">We help you make Modern Interior Design</div>
-                <div class="design__description">
-                  Donec mattis porta eros, aliquet finibus risus interdum at. Nulla vivethe as it
-                  was for us to know what was to be done. the this is a long post for the text.`This
-                  small text has to be place here, since this is a place holder. You can also chane
-                  it.
-                </div>
-                <ul class="design__list">
-                  <li>Donec mattis porta eros,let aliquet finibus ri</li>
-                  <li>Donec mattis porta eros,let aliquet finibus ri</li>
-                  <li>Donec mattis porta eros,let aliquet finibus ri</li>
-                  <li>Donec mattis porta eros,let aliquet finibus ri</li>
-                </ul>
-                <div class="btn" href="#">
-                  <a class="btn__item" href="#">Explore</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="articles">
-          <div class="container">
-            <div class="articles__body">
-              <div class="article">
-                <div class="article__img">
-                  <div class="article__img-bg"></div>
-                  <img src="./img/product-1.png" alt="Nordic Chair" />
-                </div>
-                <div class="article__text">
-                  <div class="article__title">Nordic Chair</div>
-                  <div class="article__description">
-                    Donec mattis porta eros, aliquet finibus risus in. Donecd
-                  </div>
-                  <div class="article__more"><a href="#">Read more</a></div>
-                </div>
-              </div>
-              <div class="article">
-                <div class="article__img">
-                  <div class="article__img-bg"></div>
-                  <img src="./img/product-2.png" alt="Nordic Chair" />
-                </div>
-                <div class="article__text">
-                  <div class="article__title">Kruzi Aero</div>
-                  <div class="article__description">
-                    Donec mattis porta eros, aliquet finibus risus in. Donecd
-                  </div>
-                  <div class="article__more"><a href="#">Read more</a></div>
-                </div>
-              </div>
-              <div class="article">
-                <div class="article__img">
-                  <div class="article__img-bg"></div>
-                  <img src="./img/product-3.png" alt="Nordic Chair" />
-                </div>
-                <div class="article__text">
-                  <div class="article__title">Ergonomic Chair</div>
-                  <div class="article__description">
-                    Donec mattis porta eros, aliquet finibus risus in. Donecd
-                  </div>
-                  <div class="article__more"><a href="#">Read more</a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="testimonials">
-          <div class="container">
-            <div class="testimonials__body">
-              <div class="testimonials__title">Testimonials</div>
-              <div class="testimonials__items">
-                <div class="testimonials__left">
-                  <img src="./img/testimonial_left.svg" alt="" srcset="" />
-                </div>
-                <div class="testimonial">
-                  <div class="testimonial__body">
-                    <div class="testimonial__text">
-                      Donec nibh magna, interdum quis massa sed, rhoncus laoreet quam. Mauris
-                      accumsan felis fermentum euismod egestas. Mauris ante augue, cursus sit amet
-                      arcu a, maximus suscipit nibh. Integer vel nibh tellus. Pellentesque in risus
-                      non dui venenatis sollicitudin sed vitae diam. Fusce tincidunt nisl mi, at
-                      molestie odio accumsan non. Pellentesque ma
-                    </div>
-                    <div class="testimonial__foto">
-                      <img src="./img/testimonial_foto.png" alt="" />
-                    </div>
-                    <div class="testimonial__name">Michelle Anna</div>
-                    <div class="testimonial__role">CEO, Co-Founder, XYZ Inc.</div>
-                  </div>
-                </div>
-                <div class="testimonials__right">
-                  <img src="./img/testimonial_left.svg" alt="" srcset="" />
-                </div>
-              </div>
-
-              <div class="testimonials__dots">
-                <span></span><span class="testimonials__dots--active"></span><span></span
-                ><span></span><span></span><span></span><span></span>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="blog">
-          <div class="container">
-            <div class="blog__body">
-              <div class="blog__row">
-                <div class="blog__title">Recent Blog</div>
-                <div class="blog__view-all"><a href="#">View All Posts</a></div>
-              </div>
-              <div class="blog__posts">
-                <div class="post">
-                  <div class="post__body">
-                    <div class="post__img">
-                      <a href="#"> <img src="./img/post-1.png" alt="" /></a>
-                    </div>
-                    <div class="post__title">First Time Home Owner Ideas</div>
-                    <div class="post__subtitle">
-                      by <strong> Nana Ama</strong> on <strong>Nov 18th, 2022</strong>
-                    </div>
-                  </div>
-                </div>
-                <div class="post">
-                  <div class="post__body">
-                    <div class="post__img">
-                      <a href="#"> <img src="./img/post-2.png" alt="" /></a>
-                    </div>
-                    <div class="post__title">First Time Home Owner Ideas</div>
-                    <div class="post__subtitle">
-                      by <strong> Nana Ama</strong> on <strong>Nov 18th, 2022</strong>
-                    </div>
-                  </div>
-                </div>
-                <div class="post">
-                  <div class="post__body">
-                    <div class="post__img">
-                      <a href="#"> <img src="./img/post-3.png" alt="" /></a>
-                    </div>
-                    <div class="post__title">First Time Home Owner Ideas</div>
-                    <div class="post__subtitle">
-                      by <strong> Nana Ama</strong> on <strong>Nov 18th, 2022</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="subscribe">
-          <div class="subscribe__bg"></div>
-          <div class="container">
-            <div class="subscribe__body">
-              <div class="subscribe__form">
-                <div class="subscribe__title">Subscribe to Newsletter</div>
-                <form>
-                  <input type="text" placeholder="Enter your name" />
-                  <input type="email" placeholder="Enter your e-mail" />
-                  <button class="subscribe__btn">&nbsp;</button>
+                  <button class="search__btn">Search</button>
                 </form>
               </div>
-              <div class="subscribe__img">
-                <img src="./img/subscribe_sofa.png" alt="" />
-              </div>
             </div>
           </div>
         </section>
+        <!-- Search End -->
+        <div class="container">
+          <article class="main-body">
+            <div class="left-section">
+              <section class="sort">
+                <div class="sort__body">
+                  <ul class="sort__title list">
+                    <li>
+                      <details>
+                        <summary>SORT BY:</summary>
+
+                        <ul class="list__body">
+                          <li>
+                            <label><input type="radio" name="sort-by" />Price</label>
+                          </li>
+                          <li>
+                            <label><input type="radio" name="sort-by" />Popular</label>
+                          </li>
+                          <li>
+                            <label><input type="radio" name="sort-by" />Stars</label>
+                          </li>
+                          <li>
+                            <label><input type="radio" name="sort-by" />Reviews</label>
+                          </li>
+                        </ul>
+                      </details>
+                    </li>
+                    <li>
+                      <details>
+                        <summary>ROOM TYPE:</summary>
+                        <ul class="list__body">
+                          <li>
+                            <label><input type="checkbox" /> Family friendly(96)</label>
+                          </li>
+                          <li>
+                            <label><input type="checkbox" /> Pet friendly(8)</label>
+                          </li>
+                          <li>
+                            <label><input type="checkbox" /> Gay friendly(5)</label>
+                          </li>
+                          <li>
+                            <label><input type="checkbox" /> Disabled Facility's(32)</label>
+                          </li>
+                        </ul>
+                      </details>
+                    </li>
+                  </ul>
+                  <div class="sort__row"></div>
+                </div>
+              </section>
+              <!-- Sort End -->
+              <section class="hotels">
+                <div class="hotels__body">
+                  <div class="hotel">
+                    <div class="hotel__body">
+                      <div class="hotel__title">
+                        Scenic Hotel Auckland
+                        <div class="hotel__sale"></div>
+                      </div>
+                      <div class="hotel__img">
+                        <img src="./img/hotel_img.png" />
+
+                        <div class="hotel__recommended">recommended</div>
+                        <div class="hotel__like">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            width="17px"
+                            height="17px"
+                            viewBox="0 0 511.626 511.627"
+                            xml:space="preserve"
+                          >
+                            <g>
+                              <path
+                                d="M475.366,71.951c-24.175-23.606-57.575-35.404-100.215-35.404c-11.8,0-23.843,2.046-36.117,6.136
+                          c-12.279,4.093-23.702,9.615-34.256,16.562c-10.568,6.945-19.65,13.467-27.269,19.556c-7.61,6.091-14.845,12.564-21.696,19.414
+                          c-6.854-6.85-14.087-13.323-21.698-19.414c-7.616-6.089-16.702-12.607-27.268-19.556c-10.564-6.95-21.985-12.468-34.261-16.562
+                          c-12.275-4.089-24.316-6.136-36.116-6.136c-42.637,0-76.039,11.801-100.211,35.404C12.087,95.552,0,128.288,0,170.162
+                          c0,12.753,2.24,25.889,6.711,39.398c4.471,13.514,9.566,25.031,15.275,34.546c5.708,9.514,12.181,18.796,19.414,27.837
+                          c7.233,9.042,12.519,15.27,15.846,18.699c3.33,3.422,5.948,5.899,7.851,7.419L243.25,469.937c3.427,3.429,7.614,5.144,12.562,5.144
+                          s9.138-1.715,12.563-5.137l177.87-171.307c43.588-43.583,65.38-86.41,65.38-128.475C511.626,128.288,499.537,95.552,475.366,71.951
+                          z"
+                              />
+                            </g>
+                          </svg>
+                        </div>
+                        <div class="hotel__rating">
+                          <div class="hotel__stars">
+                            <span class="hotel__stars--active"></span>
+                            <span class="hotel__stars--active"></span>
+                            <span class="hotel__stars--active"></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          650 reviews
+                        </div>
+                      </div>
+                      <div class="hotel__price">USD <span>200</span></div>
+                      <div class="hotel__description">Apartment...></div>
+                      <div class="hotel__btn">
+                        <a href="#">BOOK IT</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="hotel">
+                    <div class="hotel__body">
+                      <div class="hotel__title">Scenic Hotel Auckland</div>
+                      <div class="hotel__img">
+                        <img src="./img/hotel_img.png" />
+                        <div class="hotel__like">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            width="17px"
+                            height="17px"
+                            viewBox="0 0 511.626 511.627"
+                            xml:space="preserve"
+                          >
+                            <g>
+                              <path
+                                d="M475.366,71.951c-24.175-23.606-57.575-35.404-100.215-35.404c-11.8,0-23.843,2.046-36.117,6.136
+                          c-12.279,4.093-23.702,9.615-34.256,16.562c-10.568,6.945-19.65,13.467-27.269,19.556c-7.61,6.091-14.845,12.564-21.696,19.414
+                          c-6.854-6.85-14.087-13.323-21.698-19.414c-7.616-6.089-16.702-12.607-27.268-19.556c-10.564-6.95-21.985-12.468-34.261-16.562
+                          c-12.275-4.089-24.316-6.136-36.116-6.136c-42.637,0-76.039,11.801-100.211,35.404C12.087,95.552,0,128.288,0,170.162
+                          c0,12.753,2.24,25.889,6.711,39.398c4.471,13.514,9.566,25.031,15.275,34.546c5.708,9.514,12.181,18.796,19.414,27.837
+                          c7.233,9.042,12.519,15.27,15.846,18.699c3.33,3.422,5.948,5.899,7.851,7.419L243.25,469.937c3.427,3.429,7.614,5.144,12.562,5.144
+                          s9.138-1.715,12.563-5.137l177.87-171.307c43.588-43.583,65.38-86.41,65.38-128.475C511.626,128.288,499.537,95.552,475.366,71.951
+                          z"
+                              />
+                            </g>
+                          </svg>
+                        </div>
+                        <div class="hotel__rating">
+                          <div class="hotel__stars">
+                            <span class="hotel__stars--active"></span>
+                            <span class="hotel__stars--active"></span>
+                            <span class="hotel__stars--active"></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          650 reviews
+                        </div>
+                      </div>
+                      <div class="hotel__price">USD <span>200</span></div>
+                      <div class="hotel__description">Apartment...></div>
+                      <div class="hotel__btn">
+                        <a href="#">BOOK IT</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="hotel">
+                    <div class="hotel__body">
+                      <div class="hotel__title">Scenic Hotel Auckland</div>
+                      <div class="hotel__img">
+                        <img src="./img/hotel_img.png" />
+                        <div class="hotel__like">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            width="17px"
+                            height="17px"
+                            viewBox="0 0 511.626 511.627"
+                            xml:space="preserve"
+                          >
+                            <g>
+                              <path
+                                d="M475.366,71.951c-24.175-23.606-57.575-35.404-100.215-35.404c-11.8,0-23.843,2.046-36.117,6.136
+                          c-12.279,4.093-23.702,9.615-34.256,16.562c-10.568,6.945-19.65,13.467-27.269,19.556c-7.61,6.091-14.845,12.564-21.696,19.414
+                          c-6.854-6.85-14.087-13.323-21.698-19.414c-7.616-6.089-16.702-12.607-27.268-19.556c-10.564-6.95-21.985-12.468-34.261-16.562
+                          c-12.275-4.089-24.316-6.136-36.116-6.136c-42.637,0-76.039,11.801-100.211,35.404C12.087,95.552,0,128.288,0,170.162
+                          c0,12.753,2.24,25.889,6.711,39.398c4.471,13.514,9.566,25.031,15.275,34.546c5.708,9.514,12.181,18.796,19.414,27.837
+                          c7.233,9.042,12.519,15.27,15.846,18.699c3.33,3.422,5.948,5.899,7.851,7.419L243.25,469.937c3.427,3.429,7.614,5.144,12.562,5.144
+                          s9.138-1.715,12.563-5.137l177.87-171.307c43.588-43.583,65.38-86.41,65.38-128.475C511.626,128.288,499.537,95.552,475.366,71.951
+                          z"
+                              />
+                            </g>
+                          </svg>
+                        </div>
+                        <div class="hotel__rating">
+                          <div class="hotel__stars">
+                            <span class="hotel__stars--active"></span>
+                            <span class="hotel__stars--active"></span>
+                            <span class="hotel__stars--active"></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          650 reviews
+                        </div>
+                      </div>
+                      <div class="hotel__price">USD <span>200</span></div>
+                      <div class="hotel__description">Apartment...></div>
+                      <div class="hotel__btn">
+                        <a href="#">BOOK IT</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="hotel">
+                    <div class="hotel__body">
+                      <div class="hotel__title">Scenic Hotel Auckland</div>
+                      <div class="hotel__img">
+                        <img src="./img/hotel_img.png" />
+                        <div class="hotel__like">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            width="17px"
+                            height="17px"
+                            viewBox="0 0 511.626 511.627"
+                            xml:space="preserve"
+                          >
+                            <g>
+                              <path
+                                d="M475.366,71.951c-24.175-23.606-57.575-35.404-100.215-35.404c-11.8,0-23.843,2.046-36.117,6.136
+                          c-12.279,4.093-23.702,9.615-34.256,16.562c-10.568,6.945-19.65,13.467-27.269,19.556c-7.61,6.091-14.845,12.564-21.696,19.414
+                          c-6.854-6.85-14.087-13.323-21.698-19.414c-7.616-6.089-16.702-12.607-27.268-19.556c-10.564-6.95-21.985-12.468-34.261-16.562
+                          c-12.275-4.089-24.316-6.136-36.116-6.136c-42.637,0-76.039,11.801-100.211,35.404C12.087,95.552,0,128.288,0,170.162
+                          c0,12.753,2.24,25.889,6.711,39.398c4.471,13.514,9.566,25.031,15.275,34.546c5.708,9.514,12.181,18.796,19.414,27.837
+                          c7.233,9.042,12.519,15.27,15.846,18.699c3.33,3.422,5.948,5.899,7.851,7.419L243.25,469.937c3.427,3.429,7.614,5.144,12.562,5.144
+                          s9.138-1.715,12.563-5.137l177.87-171.307c43.588-43.583,65.38-86.41,65.38-128.475C511.626,128.288,499.537,95.552,475.366,71.951
+                          z"
+                              />
+                            </g>
+                          </svg>
+                        </div>
+                        <div class="hotel__rating">
+                          <div class="hotel__stars">
+                            <span class="hotel__stars--active"></span>
+                            <span class="hotel__stars--active"></span>
+                            <span class="hotel__stars--active"></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          650 reviews
+                        </div>
+                      </div>
+                      <div class="hotel__price">USD <span>200</span></div>
+                      <div class="hotel__description">Apartment...></div>
+                      <div class="hotel__btn">
+                        <a href="#">BOOK IT</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="hotel">
+                    <div class="hotel__body">
+                      <div class="hotel__title">Scenic Hotel Auckland</div>
+                      <div class="hotel__img">
+                        <img src="./img/hotel_img.png" />
+                        <div class="hotel__like">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            width="17px"
+                            height="17px"
+                            viewBox="0 0 511.626 511.627"
+                            xml:space="preserve"
+                          >
+                            <g>
+                              <path
+                                d="M475.366,71.951c-24.175-23.606-57.575-35.404-100.215-35.404c-11.8,0-23.843,2.046-36.117,6.136
+                          c-12.279,4.093-23.702,9.615-34.256,16.562c-10.568,6.945-19.65,13.467-27.269,19.556c-7.61,6.091-14.845,12.564-21.696,19.414
+                          c-6.854-6.85-14.087-13.323-21.698-19.414c-7.616-6.089-16.702-12.607-27.268-19.556c-10.564-6.95-21.985-12.468-34.261-16.562
+                          c-12.275-4.089-24.316-6.136-36.116-6.136c-42.637,0-76.039,11.801-100.211,35.404C12.087,95.552,0,128.288,0,170.162
+                          c0,12.753,2.24,25.889,6.711,39.398c4.471,13.514,9.566,25.031,15.275,34.546c5.708,9.514,12.181,18.796,19.414,27.837
+                          c7.233,9.042,12.519,15.27,15.846,18.699c3.33,3.422,5.948,5.899,7.851,7.419L243.25,469.937c3.427,3.429,7.614,5.144,12.562,5.144
+                          s9.138-1.715,12.563-5.137l177.87-171.307c43.588-43.583,65.38-86.41,65.38-128.475C511.626,128.288,499.537,95.552,475.366,71.951
+                          z"
+                              />
+                            </g>
+                          </svg>
+                        </div>
+                        <div class="hotel__rating">
+                          <div class="hotel__stars">
+                            <span class="hotel__stars--active"></span>
+                            <span class="hotel__stars--active"></span>
+                            <span class="hotel__stars--active"></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          650 reviews
+                        </div>
+                      </div>
+                      <div class="hotel__price">USD <span>200</span></div>
+                      <div class="hotel__description">Apartment...></div>
+                      <div class="hotel__btn">
+                        <a href="#">BOOK IT</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="hotel">
+                    <div class="hotel__body">
+                      <div class="hotel__title">Scenic Hotel Auckland</div>
+                      <div class="hotel__img">
+                        <img src="./img/hotel_img.png" />
+                        <div class="hotel__like">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            width="17px"
+                            height="17px"
+                            viewBox="0 0 511.626 511.627"
+                            xml:space="preserve"
+                          >
+                            <g>
+                              <path
+                                d="M475.366,71.951c-24.175-23.606-57.575-35.404-100.215-35.404c-11.8,0-23.843,2.046-36.117,6.136
+                          c-12.279,4.093-23.702,9.615-34.256,16.562c-10.568,6.945-19.65,13.467-27.269,19.556c-7.61,6.091-14.845,12.564-21.696,19.414
+                          c-6.854-6.85-14.087-13.323-21.698-19.414c-7.616-6.089-16.702-12.607-27.268-19.556c-10.564-6.95-21.985-12.468-34.261-16.562
+                          c-12.275-4.089-24.316-6.136-36.116-6.136c-42.637,0-76.039,11.801-100.211,35.404C12.087,95.552,0,128.288,0,170.162
+                          c0,12.753,2.24,25.889,6.711,39.398c4.471,13.514,9.566,25.031,15.275,34.546c5.708,9.514,12.181,18.796,19.414,27.837
+                          c7.233,9.042,12.519,15.27,15.846,18.699c3.33,3.422,5.948,5.899,7.851,7.419L243.25,469.937c3.427,3.429,7.614,5.144,12.562,5.144
+                          s9.138-1.715,12.563-5.137l177.87-171.307c43.588-43.583,65.38-86.41,65.38-128.475C511.626,128.288,499.537,95.552,475.366,71.951
+                          z"
+                              />
+                            </g>
+                          </svg>
+                        </div>
+                        <div class="hotel__rating">
+                          <div class="hotel__stars">
+                            <span class="hotel__stars--active"></span>
+                            <span class="hotel__stars--active"></span>
+                            <span class="hotel__stars--active"></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          650 reviews
+                        </div>
+                      </div>
+                      <div class="hotel__price">USD <span>200</span></div>
+                      <div class="hotel__description">Apartment...></div>
+                      <div class="hotel__btn">
+                        <a href="#">BOOK IT</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="hotel">
+                    <div class="hotel__body">
+                      <div class="hotel__title">Scenic Hotel Auckland</div>
+                      <div class="hotel__img">
+                        <img src="./img/hotel_img.png" />
+                        <div class="hotel__like">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            width="17px"
+                            height="17px"
+                            viewBox="0 0 511.626 511.627"
+                            xml:space="preserve"
+                          >
+                            <g>
+                              <path
+                                d="M475.366,71.951c-24.175-23.606-57.575-35.404-100.215-35.404c-11.8,0-23.843,2.046-36.117,6.136
+                          c-12.279,4.093-23.702,9.615-34.256,16.562c-10.568,6.945-19.65,13.467-27.269,19.556c-7.61,6.091-14.845,12.564-21.696,19.414
+                          c-6.854-6.85-14.087-13.323-21.698-19.414c-7.616-6.089-16.702-12.607-27.268-19.556c-10.564-6.95-21.985-12.468-34.261-16.562
+                          c-12.275-4.089-24.316-6.136-36.116-6.136c-42.637,0-76.039,11.801-100.211,35.404C12.087,95.552,0,128.288,0,170.162
+                          c0,12.753,2.24,25.889,6.711,39.398c4.471,13.514,9.566,25.031,15.275,34.546c5.708,9.514,12.181,18.796,19.414,27.837
+                          c7.233,9.042,12.519,15.27,15.846,18.699c3.33,3.422,5.948,5.899,7.851,7.419L243.25,469.937c3.427,3.429,7.614,5.144,12.562,5.144
+                          s9.138-1.715,12.563-5.137l177.87-171.307c43.588-43.583,65.38-86.41,65.38-128.475C511.626,128.288,499.537,95.552,475.366,71.951
+                          z"
+                              />
+                            </g>
+                          </svg>
+                        </div>
+                        <div class="hotel__rating">
+                          <div class="hotel__stars">
+                            <span class="hotel__stars--active"></span>
+                            <span class="hotel__stars--active"></span>
+                            <span class="hotel__stars--active"></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          650 reviews
+                        </div>
+                      </div>
+                      <div class="hotel__price">USD <span>200</span></div>
+                      <div class="hotel__description">Apartment...></div>
+                      <div class="hotel__btn">
+                        <a href="#">BOOK IT</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="hotel">
+                    <div class="hotel__body">
+                      <div class="hotel__title">Scenic Hotel Auckland</div>
+                      <div class="hotel__img">
+                        <img src="./img/hotel_img.png" />
+                        <div class="hotel__like">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            width="17px"
+                            height="17px"
+                            viewBox="0 0 511.626 511.627"
+                            xml:space="preserve"
+                          >
+                            <g>
+                              <path
+                                d="M475.366,71.951c-24.175-23.606-57.575-35.404-100.215-35.404c-11.8,0-23.843,2.046-36.117,6.136
+                          c-12.279,4.093-23.702,9.615-34.256,16.562c-10.568,6.945-19.65,13.467-27.269,19.556c-7.61,6.091-14.845,12.564-21.696,19.414
+                          c-6.854-6.85-14.087-13.323-21.698-19.414c-7.616-6.089-16.702-12.607-27.268-19.556c-10.564-6.95-21.985-12.468-34.261-16.562
+                          c-12.275-4.089-24.316-6.136-36.116-6.136c-42.637,0-76.039,11.801-100.211,35.404C12.087,95.552,0,128.288,0,170.162
+                          c0,12.753,2.24,25.889,6.711,39.398c4.471,13.514,9.566,25.031,15.275,34.546c5.708,9.514,12.181,18.796,19.414,27.837
+                          c7.233,9.042,12.519,15.27,15.846,18.699c3.33,3.422,5.948,5.899,7.851,7.419L243.25,469.937c3.427,3.429,7.614,5.144,12.562,5.144
+                          s9.138-1.715,12.563-5.137l177.87-171.307c43.588-43.583,65.38-86.41,65.38-128.475C511.626,128.288,499.537,95.552,475.366,71.951
+                          z"
+                              />
+                            </g>
+                          </svg>
+                        </div>
+                        <div class="hotel__rating">
+                          <div class="hotel__stars">
+                            <span class="hotel__stars--active"></span>
+                            <span class="hotel__stars--active"></span>
+                            <span class="hotel__stars--active"></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          650 reviews
+                        </div>
+                      </div>
+                      <div class="hotel__price">USD <span>200</span></div>
+                      <div class="hotel__description">Apartment...></div>
+                      <div class="hotel__btn">
+                        <a href="#">BOOK IT</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="hotel">
+                    <div class="hotel__body">
+                      <div class="hotel__title">Scenic Hotel Auckland</div>
+                      <div class="hotel__img">
+                        <img src="./img/hotel_img.png" />
+                        <div class="hotel__like">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            width="17px"
+                            height="17px"
+                            viewBox="0 0 511.626 511.627"
+                            xml:space="preserve"
+                          >
+                            <g>
+                              <path
+                                d="M475.366,71.951c-24.175-23.606-57.575-35.404-100.215-35.404c-11.8,0-23.843,2.046-36.117,6.136
+                          c-12.279,4.093-23.702,9.615-34.256,16.562c-10.568,6.945-19.65,13.467-27.269,19.556c-7.61,6.091-14.845,12.564-21.696,19.414
+                          c-6.854-6.85-14.087-13.323-21.698-19.414c-7.616-6.089-16.702-12.607-27.268-19.556c-10.564-6.95-21.985-12.468-34.261-16.562
+                          c-12.275-4.089-24.316-6.136-36.116-6.136c-42.637,0-76.039,11.801-100.211,35.404C12.087,95.552,0,128.288,0,170.162
+                          c0,12.753,2.24,25.889,6.711,39.398c4.471,13.514,9.566,25.031,15.275,34.546c5.708,9.514,12.181,18.796,19.414,27.837
+                          c7.233,9.042,12.519,15.27,15.846,18.699c3.33,3.422,5.948,5.899,7.851,7.419L243.25,469.937c3.427,3.429,7.614,5.144,12.562,5.144
+                          s9.138-1.715,12.563-5.137l177.87-171.307c43.588-43.583,65.38-86.41,65.38-128.475C511.626,128.288,499.537,95.552,475.366,71.951
+                          z"
+                              />
+                            </g>
+                          </svg>
+                        </div>
+                        <div class="hotel__rating">
+                          <div class="hotel__stars">
+                            <span class="hotel__stars--active"></span>
+                            <span class="hotel__stars--active"></span>
+                            <span class="hotel__stars--active"></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          650 reviews
+                        </div>
+                      </div>
+                      <div class="hotel__price">USD <span>200</span></div>
+                      <div class="hotel__description">Apartment...></div>
+                      <div class="hotel__btn">
+                        <a href="#">BOOK IT</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- Hotels End -->
+            </div>
+            <aside class="filter">
+              <div class="filter__star">Star Rating</div>
+              <div class="filter__guest">Guest Rating</div>
+              <div class="filter__price">Price Range <input type="range" /></div>
+              <div class="filter__friendly list">
+                <details open>
+                  <summary>Friendly!?</summary>
+                  <ul class="list__body">
+                    <li>
+                      <label><input type="checkbox" /> Family friendly(96)</label>
+                    </li>
+                    <li>
+                      <label><input type="checkbox" /> Pet friendly(8)</label>
+                    </li>
+                    <li>
+                      <label><input type="checkbox" /> Gay friendly(5)</label>
+                    </li>
+                    <li>
+                      <label><input type="checkbox" /> Disabled Facility's(32)</label>
+                    </li>
+                  </ul>
+                </details>
+              </div>
+              <div class="filter__amenities list">
+                <details open>
+                  <summary>Amenities</summary>
+                  <ul class="list__body">
+                    <li>
+                      <label><input type="checkbox" /> 24 Hour Room Service(108)</label>
+                    </li>
+                    <li>
+                      <label><input type="checkbox" /> Non Smoking Rooms(108)</label>
+                    </li>
+                    <li>
+                      <label><input type="checkbox" /> Smoking Rooms(0)</label>
+                    </li>
+                    <li>
+                      <label><input type="checkbox" /> Airport Shuttle(96)</label>
+                    </li>
+                    <li>
+                      <label><input type="checkbox" /> Concierge(12)</label>
+                    </li>
+                    <li>
+                      <label><input type="checkbox" /> Hotel Wifi(108)</label>
+                    </li>
+                  </ul>
+                </details>
+              </div>
+              <div class="filter__type list">
+                <details open>
+                  <summary>Accommodation Type</summary>
+                  <ul class="list__body">
+                    <li>
+                      <label><input type="checkbox" /> Beach - Seaside(10)</label>
+                    </li>
+                    <li>
+                      <label><input type="checkbox" /> Romantic(23)</label>
+                    </li>
+                    <li>
+                      <label><input type="checkbox" /> Budget(66)</label>
+                    </li>
+                    <li>
+                      <label><input type="checkbox" /> Family(24)</label>
+                    </li>
+                    <li>
+                      <label><input type="checkbox" /> City Center(5)</label>
+                    </li>
+                    <li>
+                      <label><input type="checkbox" /> Boutique(2)</label>
+                    </li>
+                    <li>
+                      <label><input type="checkbox" /> Shopping(57)</label>
+                    </li>
+                    <li>
+                      <label><input type="checkbox" /> Golf Sports(1)</label>
+                    </li>
+                    <li>
+                      <label><input type="checkbox" /> Gourmet Restaurant(58)</label>
+                    </li>
+                    <li>
+                      <label><input type="checkbox" /> Business Hotel(75)</label>
+                    </li>
+                  </ul>
+                </details>
+              </div>
+            </aside>
+            <!-- Filter End -->
+          </article>
+        </div>
       </main>
       <footer class="footer">
-        <div class="container">
-          <div class="footer__body">
-            <div class="footer__logo logo"><a href="#">Furni.</a></div>
-            <div class="footer__row">
-              <div class="footer__text">
-                Donec mattis porta eros, aliquet finibus risus interdum at. Nulla vivethe as it was
-                for us to know what was to be done. the this is a long post for the text.`This small
-                text has to be place here, since this is
-              </div>
-
-              <div class="footer__menu">
-                <ul class="footer__list">
-                  <li><a href="#">About us</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Contact us</a></li>
-                </ul>
-                <ul class="footer__list">
-                  <li><a href="#">Support</a></li>
-                  <li><a href="#">Knowledge base</a></li>
-                  <li><a href="#">Live chat</a></li>
-                </ul>
-                <ul class="footer__list">
-                  <li><a href="#">Jobs</a></li>
-                  <li><a href="#">Our team</a></li>
-                  <li><a href="#">Leadership</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                </ul>
-                <ul class="footer__list">
-                  <li><a href="#">Nordic Chair</a></li>
-                  <li><a href="#">Kruzo Aero</a></li>
-                  <li><a href="#">Ergonomic</a></li>
-                </ul>
-              </div>
+        <div class="footer__body">
+          <div class="footer__row container">
+            <div class="footer__menu">
+              <div class="footer__title">* if you cancel in the hotels cancellation period</div>
+              <ul class="footer__items">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Privacy and Cookies</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Facebook </a></li>
+                <li><a href="#">Help and FAQ</a></li>
+                <li><a href="#">Customer Service</a></li>
+                <li><a href="#">My Booking </a></li>
+                <li><a href="#">Add your Hotel</a></li>
+                <li><a href="#">Site Map</a></li>
+              </ul>
             </div>
+            <div class="footer__menu">
+              <div class="footer__title">Go to search results in:</div>
+              <ul class="footer__language">
+                <li>
+                  <a href="#"><img src="./img/icon/lang_ang.svg" alt="EN" /> English</a>
+                </li>
+                <li>
+                  <a href="#"><img src="./img/icon/lang_ang.svg" alt="EN" /> Netherlands</a>
+                </li>
+                <li>
+                  <a href="#"><img src="./img/icon/lang_ang.svg" alt="EN" /> Español</a>
+                </li>
+                <li>
+                  <a href="#"><img src="./img/icon/lang_ang.svg" alt="EN" /> Deutsch</a>
+                </li>
+                <li>
+                  <a href="#"><img src="./img/icon/lang_ang.svg" alt="EN" /> Italiano</a>
+                </li>
+                <li>
+                  <a href="#"><img src="./img/icon/lang_ang.svg" alt="EN" /> Japanese</a>
+                </li>
+                <li>
+                  <a href="#"><img src="./img/icon/lang_ang.svg" alt="EN" /> Francais</a>
+                </li>
+                <li>
+                  <a href="#"><img src="./img/icon/lang_ang.svg" alt="EN" /> Ukrainian</a>
+                </li>
+                <li>
+                  <a href="#"><img src="./img/icon/lang_ang.svg" alt="EN" /> Svenska</a>
+                </li>
+                <li>
+                  <a href="#"><img src="./img/icon/lang_ang.svg" alt="EN" /> Portugues</a>
+                </li>
+                <li>
+                  <a href="#"><img src="./img/icon/lang_ang.svg" alt="EN" /> Norsk</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__powered">
+            Hotel reviews powered by: <a href="http://pl.vn.ua"> pl.vn.ua</a>
+          </div>
+          <div class="footer__bg-img"></div>
+          <div class="footer__bottom">
+            <div class="footer__copyright">© 2022. Hotelbooking - Book hotel now</div>
             <div class="footer__socials">
-              <a href="#"><img src="./img/icon/fb.svg" alt="" /></a>
-              <a href="#"><img src="./img/icon/fb.svg" alt="" /></a>
-              <a href="#"><img src="./img/icon/fb.svg" alt="" /></a>
-              <a href="#"><img src="./img/icon/fb.svg" alt="" /></a>
-              <a href="#"><img src="./img/icon/fb.svg" alt="" /></a>
-            </div>
-            <div class="footer__copyright">
-              <div class="footer__copyright-text">
-                Copyright 2022 <a href="/">Mebel</a>. All Rights Reserved.
-              </div>
-              <div class="footer__privacy">
-                <a href="#">Terms & Conditions</a> <a href="#">Privacy Policy</a>
-              </div>
+              <img src="./img/icon/socials_fb.svg" alt="Facebook" />
+              <img src="./img/icon/socials_telegram.svg" alt="Telegram" />
+              <img src="./img/icon/socials_viber.svg" alt="Viber" />
             </div>
           </div>
         </div>
